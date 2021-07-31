@@ -8,7 +8,6 @@ output:
 
 
 
-
 You work for Motor Trend, a magazine about the automobile industry. Looking at a data set of a collection of cars, they are interested in exploring the relationship between a set of variables and miles per gallon (MPG) (outcome). They are particularly interested in the following two questions:
 
 “Is an automatic or manual transmission better for MPG”
@@ -111,7 +110,8 @@ round(summary(mtcarsfitUv)$r.square*100, digits=2)
 
 The result of the regression can only explain that 35.98% of the mpg variation
 
-```{r}
+```{r, results='hide'}
+# Hidden results to comply with the page constraint.}
 # Checking the regression values of the multivariable mtcarsfitMv
 mtcarsfitMv <- lm(mpg ~ ., data = mtcars)
 mtcarsfitMv
