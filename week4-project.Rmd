@@ -1,8 +1,9 @@
 ---
 title: 'Regression Week 4 Project: Motor Trends : Automatic or Manual transmission?'
 output:
+  pdf_document: default
   html_document:
-    df_print: paged 
+    df_print: paged
 ---
 
 
@@ -117,8 +118,9 @@ mtcarsfitMv
 summary(mtcarsfitMv)
 ```
 
-
-```{r}
+ 
+```{r, results='hide'}
+# Hidden results to comply with the page constraint.
 stepFit <- step(mtcarsfitMv)
 summary(stepFit)
 summary(stepFit)$coeff
